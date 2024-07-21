@@ -190,3 +190,5 @@ var swiper = new Swiper(".mySwiper", {
       drop3tl.reverse()
     });
   });
+
+  // animatehomepage()

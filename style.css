@@ -253,6 +253,7 @@ li.menu-heading {
     justify-content: center;
     overflow: hidden;
     position: relative;
+    top: 2vw;
 }
 
 .marquee h1{
@@ -411,9 +412,11 @@ li.menu-heading {
 /* About-Section */
 
 .about-section{
-    height: 90vh;
+    height: 110vh;
     width: 100%;
     text-align: center;
+    position: relative;
+    top: 3vw;
 }
 
 .about{
@@ -444,6 +447,8 @@ li.menu-heading {
     position: relative;
     top: 1vw;
     font-size: 1.2vw;
+    font-weight: 500;
+    line-height: 2;
 }
 
 .btnn {
@@ -489,4 +494,158 @@ li.menu-heading {
 .img img{
     height: 32vw;
     border-radius: 10px;
+}
+
+/* Contact-Section */
+
+.contact-section{
+    height: 120vh;
+    width: 100%;
+}
+
+.contact-heading{
+    text-align: center;
+    font-size: 4vw;
+    color: #0056FF;
+}
+
+.main-contact{
+    background-image: url(Images/Contact-bg.png);
+    height: 55%;
+    width: 80%;
+    border-radius: 50px;
+    position: relative;
+    left: 10%;
+    top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}  
+
+.main-contact h1{
+    font-size: 3vw;
+}
+
+.contact-btn {
+    position: relative;
+    margin-top: 1vw;
+    height: 3vw;
+    width: 9vw;
+    border: 1px solid #0056FF;
+    border-radius: 10px;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 99;
+    transition: color 0.4s ease;
+    top: 1vw;
+}
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0056FF;
+    top: 100%;
+    left: 0;
+    border-radius: 100%;
+    transition: 0.6s ease;
+    z-index: -999;
+}
+
+.contact-btn:hover::before {
+    border-radius: 10px;
+    top: 0;
+}
+
+.contact-btn:hover {
+    color: #fff;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.block{
+    background-color: #D3E6ED;
+    height: 14vw;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    top: -4vw;
+}
+
+
+/* Footer */
+
+.footer{
+    height: 80vh;
+    width: 100%;
+    background-color: #C2E8FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img{
+    height: 15vw;
+    position: relative;
+    top: -10%;
+    right: 3%;
+}
+
+.main-footer{
+    height: 70%;
+    width: 80%;
+    background-color: #fff; 
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -10vw;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: #aaa;
+    position: relative;
+    top: -30%;
+    left: 10%;
+}
+
+.icon{
+    background-color: #fff;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.icons{
+    display: flex;
+    gap: 2vw;
+    position: relative;
+    top: -25%;
+    left: 40%;
 }

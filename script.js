@@ -191,4 +191,4 @@ var swiper = new Swiper(".mySwiper", {
     });
   });
 
-  // animatehomepage()
+  animatehomepage()

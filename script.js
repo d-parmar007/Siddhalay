@@ -94,7 +94,6 @@ var swiper = new Swiper(".mySwiper", {
   
   
   
-  
   let drop2tl = gsap.timeline()
   
   drop2tl.to(".dropdown-2", {
@@ -140,6 +139,7 @@ var swiper = new Swiper(".mySwiper", {
     });
   });
   
+
   
   
   

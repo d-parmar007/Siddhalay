@@ -193,3 +193,43 @@ navigation3.forEach(drop3 => {
 
 // animatehomepage()
 
+// Menu
+
+var menu = document.querySelector(".fa-bars")
+var cancel = document.querySelector(".links i")
+var links = document.querySelectorAll(".links a")
+var menutl = gsap.timeline()
+
+function navresponsive() {
+  const hamburger = document.querySelector('#nav-open')
+  const navclose = document.querySelector('#nav-close')
+  const navcontent = document.querySelector('.links')
+  const navtl = gsap.timeline()
+
+  navtl.to('.links', {
+      right: '0',
+      duration: 0.8,
+  })
+
+  navtl.to('.links a', {
+      transform: "translate(0, 0)",
+      stagger: 0.09,
+      duration: 0.6,
+      delay: -0.3,
+      opacity: 1,
+  })
+
+  navtl.from('.links i', {
+      opacity: 0,
+      delay: -0.3
+  })
+
+  navtl.pause()
+  hamburger.addEventListener('click', () => {
+      navtl.play()
+  })
+  navclose.addEventListener('click', () => {
+      navtl.reverse()
+  })
+
+};

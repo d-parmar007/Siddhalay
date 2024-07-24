@@ -417,8 +417,7 @@ li.menu-heading {
     height: 110vh;
     width: 100%;
     text-align: center;
-    position: relative;
-    top: 30vw;
+    position: relative; 
 }
 
 .about {
@@ -652,6 +651,10 @@ li.menu-heading {
     left: 40%;
 }
 
+.image img{
+    display: none;
+}
+
 /* Responsive */
 
 @media(max-width:550px) {
@@ -818,6 +821,8 @@ li.menu-heading {
 
     .about-section{
         height: 100vh;
+        position: relative;
+        top: 10vw;
     }
 
     .contact-heading h1{
@@ -921,7 +926,11 @@ li.menu-heading {
     }
 
     .about-section{
-        height: 90vh;
+        height: 70vh;
+    }
+
+    .right-section img{
+        height: 35vh;
     }
 
     .head h1{
@@ -957,5 +966,24 @@ li.menu-heading {
     
     .main-footer{
         height: 33vh;
+    }
+
+    .logo img{
+        height: 15vw;
+    }
+
+    .a{
+        font-size: 100vw;
+    }
+    
+    .swiper{
+        display: none;
+    }
+
+    .image img{
+        display: block;
+        height: 60vw;
+        position: relative;
+        right: 5vw;
     }
 }

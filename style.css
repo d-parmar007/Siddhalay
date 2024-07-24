@@ -987,3 +987,30 @@ li.menu-heading {
         right: 5vw;
     }
 }
+
+@media(max-width:435px){
+    .about-section{
+        margin-top: 15vw;
+        height: 50vh;
+    }
+
+    .main-contact{
+        height: 30vh;
+    }
+
+    .contact-section{
+        height: 50vh;
+    }
+
+    .main-footer{
+        height: 25vh;
+    }
+
+    .footer{
+        height: 60vh;
+    }
+
+    .line{
+        margin-top: 13vw;
+    }
+}
